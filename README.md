@@ -8,8 +8,15 @@ A lightweight apartment operations dashboard for Casa Java. This first milestone
 - Unit occupancy and payment snapshot
 - Recent activity feed
 - Responsive layout for desktop and mobile
-- Starter views for Units, Payments, Maintenance, Expenses, and Reports
-- No backend required yet
+- Units: add, edit, delete, search/filter, unit details, deposit, amenities, notes, and photo URL
+- Tenants: profiles, contacts, emergency contact, unit assignment, dates, status, and notes
+- Payments: billing records, payment methods, references, automatic status, balances, and overdue reminders
+- Expenses: categories, vendors, payment details, notes, search, and monthly totals
+- Maintenance: requests, priorities, assignees, estimates, actual costs, statuses, and completion dates
+- Utilities: water/electricity readings, consumption and bill calculations, billing status, and history
+- Notifications: rent, contract, maintenance, and utility reminders
+- Reports: income, expenses, net income, occupancy, chart, CSV export, and print-to-PDF
+- Browser persistence through `localStorage`; no backend required yet
 
 ## Run locally
 
@@ -21,9 +28,9 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Roadmap
+## Next milestones
 
-The next implementation milestone is interactive record forms with browser storage for units, tenants, payments, expenses, maintenance, and utilities. Authentication and a cloud database should come after the workflows are validated.
+The next production milestone is authentication, a shared cloud database, receipt PDF generation, date-range report filters, and role-based access. The current local storage model is intentionally useful for validating workflows before introducing a backend.
 
 ## GitHub Pages
 
