@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casa Java apartment operations tracker">
+  <title>Casa Java | Operations Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true"><span>C</span><i></i></div>
+        <div>
+          <p class="brand-name">CASA JAVA</p>
+          <p class="brand-subtitle">Apartment operations</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <p class="nav-label">Workspace</p>
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-item" data-view="units"><span class="nav-icon">▦</span> Units <span class="nav-count">10</span></button>
+        <button class="nav-item" data-view="payments"><span class="nav-icon">₱</span> Payments</button>
+        <button class="nav-item" data-view="maintenance"><span class="nav-icon">⌁</span> Maintenance <span class="nav-count alert-count">2</span></button>
+        <button class="nav-item" data-view="expenses"><span class="nav-icon">◌</span> Expenses</button>
+        <p class="nav-label nav-label-spaced">Insights</p>
+        <button class="nav-item" data-view="reports"><span class="nav-icon">▥</span> Reports</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <div><strong>Local workspace</strong><span>Data saved in this browser</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span>Casa Java</span><b>/</b><strong id="breadcrumbCurrent">Overview</strong></div>
+        <div class="topbar-actions">
+          <button class="icon-button" id="notificationButton" aria-label="View notifications" title="Notifications">♢<span class="notification-dot"></span></button>
+          <div class="profile-chip"><span class="avatar">AJ</span><span class="profile-name">Admin Juan</span><span class="profile-chevron">⌄</span></div>
+        </div>
+      </header>
+
+      <section class="page-content" id="appContent"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
